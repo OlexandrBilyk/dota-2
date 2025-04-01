@@ -3,10 +3,10 @@ const playBtn = document.getElementById("play-btn");
 const seekBar = document.getElementById("seek-bar");
 const timeDisplay = document.getElementById("time");
 
-window.addEventListener("DOMContentLoaded", function () {
-  audio.play();
-  playBtn.textContent = "⏸️";
-});
+// window.addEventListener("DOMContentLoaded", function () {
+//   audio.play();
+//   playBtn.textContent = "⏸️";
+// });
 
 function updateTime() {
   seekBar.value = audio.currentTime;

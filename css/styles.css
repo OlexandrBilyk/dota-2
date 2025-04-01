@@ -153,6 +153,52 @@ img {
   color: transparent;
 }
 
+/* benefits */
+
+.benefits {
+  margin: 20px 0;
+  background-color: #1e1823;
+  padding: 20px 0;
+}
+.benefits-svg__circle {
+  display: flex;
+  width: 65px;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  border-radius: 365px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 22px;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+}
+.benefits-svg__circle:hover {
+  transform: scale(1.1);
+}
+.benefits__svg {
+  fill: #fd9222;
+  width: 35px;
+  height: 35px;
+}
+.benefits-list__title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.benefits-list__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  max-width: 308px;
+}
 /* modals */
 
 .backdrop {
@@ -168,6 +214,7 @@ img {
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
